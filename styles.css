@@ -181,24 +181,123 @@ background:var(--color-extra) ;
 .main2
 {
     padding-top: 130px;
+    padding-bottom: 60px;
     display: box;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    min-height: 70vh;
 }
 .steps
 {
     display: flex;
     min-height: 40vh;
     padding-top: 103px;
-    /* align-items: center; */
-    /* justify-content: center; */
+    text-align: center;
+    height: 40vh;
+    align-items: center;
 
+}
+.step1 , .step2 , .step3{
+    padding: 30px 60px;
+    /* padding-bottom: 60px; */
+}
+.step1{
+    align-items: center;
 }
 .steps p {
     text-align:center;
-    
     font-size: 14px;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Set to viewport height for full-page view */
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.stars-btn {
+    background-color: #f5f5f5; /* Set the background color to match the div */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.merchandise {
+    /* display: none; */
+    background-color: var(--color-extra);
+    padding: 20px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    
+    height: 35%;
+}
+.slider-text
+{
+    padding: 40px 40px;
+    margin-left: 260px;
+
+}
+
+.fav-free
+{
+    background-color: #f5f5f5;
+    padding: 40px 30px;
+}
+
+
+.merchandise hidden
+{
+    align-items: center;
+}
+.buttons
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  footer{
     height:400px;

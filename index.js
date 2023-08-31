@@ -14,3 +14,17 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+const buttons = document.querySelectorAll('.stars-btn');
+const merchandise = document.querySelector('.merchandise');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const stars = button.getAttribute('data-stars');
+        merchandise.innerHTML = `
+        <img width="375px" height="211px" src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png" alt="">
+            <p>Select Starbucks® merchandise</p>
+            <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $${stars}.</p>
+        `;
+        merchandise.classList.remove('hidden');
+    });
+});
